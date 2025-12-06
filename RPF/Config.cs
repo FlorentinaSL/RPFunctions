@@ -12,11 +12,10 @@ namespace RPF
         public bool Debug { get; set; } = false;
 
         [Description("----------------------- SCP RP EVENTS ----------------------")]
-        public string ScpRpFunctions096 { get; set; } = "You cannot use elevators when 106 is in rage!";
         public bool enable_106_functions { get; set; } = true;
-
         public string ScpRpFunctions106 { get; set; } = "You cannot use doors!";
         public bool enable_096_functions { get; set; } = true;
+        public string ScpRpFunctions096 { get; set; } = "You cannot use elevators when 096 is in rage!";
 
         public string ScpRpFunctions939 { get; set; } = "You cannot use elevators!";
         public bool enable_939_functions { get; set; } = true;
