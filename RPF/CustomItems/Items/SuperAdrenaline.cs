@@ -12,7 +12,7 @@ namespace RPF.Events.CustomItems
     {
         public override uint Id { get; set; } = 201;
         public override string Name { get; set; } = "Silent Adrenaline";
-        public override string Description { get; set; } = "Ti dà un Random Effect";
+        public override string Description { get; set; } = "Gives a random effect";
         public override float Weight { get; set; } = 1.5f;
         public override ItemType Type { get; set; } = ItemType.Adrenaline;
 
@@ -49,13 +49,13 @@ namespace RPF.Events.CustomItems
         {
             //patched: In 1.1.0
             if (!Check(ev.Pickup)) return;
-            ev.Player.ShowHint("Hai preso una SuperAdrenaline!");
+            ev.Player.ShowHint("You have picked the superAdrenaline");
         }
 
         public void OnUsing(UsingItemEventArgs ev)
         {
             ev.Player.ApplyRandomEffect(); 
-            Log.Debug($"{ev.Player.Nickname} usato la superAdrenaline");
+            Log.Debug($"{ev.Player.Nickname} used the superAdrenaline");
         }
     }
 }

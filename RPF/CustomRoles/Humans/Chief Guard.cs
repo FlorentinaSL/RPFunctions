@@ -59,7 +59,7 @@ namespace RPF.Events.CustomRoles.Humans
         {
             //Patched: in 1.2.0
             base.AddRole(player);
-            player.Broadcast(10, "Sei una Chief Guard.");
+            player.Broadcast(10, "you are an Chief Guard.");
         }
         
     }

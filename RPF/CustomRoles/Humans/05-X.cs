@@ -56,7 +56,7 @@ namespace RPF.Events.CustomRoles.Humans
         {
             //Patched: in 1.2.0
             base.AddRole(player);
-            player.Broadcast(10, "Sei un O5-X!");
+            player.Broadcast(10, "you are an O5-X!");
         }
         
     }

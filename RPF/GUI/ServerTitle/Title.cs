@@ -13,7 +13,7 @@ public class Title
 {
     private void OnVerified(VerifiedEventArgs ev) 
     {
-        Log.Info("[RPF - CustomGUI]: Nuovo giocatore! Dando hint...");
+        Log.Info("[RPF - CustomGUI]: New Player, Giving Title Hint.");
         Timing.RunCoroutine(HandlerHint(ev.Player), Segment.Update);
       
     }

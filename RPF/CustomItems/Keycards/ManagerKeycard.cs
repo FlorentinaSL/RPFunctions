@@ -12,7 +12,7 @@ public class ManagerKeycard : CustomKeycard
 {
     public override uint Id { get; set; } = 147;
     public override string Name { get; set; } = "Sito-Manger Keycard";
-    public override string Description { get; set; } = "Carta per il ruolo Sito-Manager";
+    public override string Description { get; set; } = "Keycard for the manager";
     public override float Weight { get; set; } = 1.5f;
     public override SpawnProperties SpawnProperties { get; set; }
     public override string KeycardLabel { get; set; } = "Sito-Manager Keycard";
@@ -45,13 +45,13 @@ public class ManagerKeycard : CustomKeycard
     }
     protected override void SubscribeEvents()
     {
-        Log.Info("[RPF - CustomKeycard]: Carta Manager registrata SUCCESS");
+        Log.Info("[RPF - CustomKeycard]: Keycard Manager registered SUCCESS");
         base.SubscribeEvents();
     }
 
     protected override void UnsubscribeEvents()
     {
-        Log.Info("[RPF - CustomKeycard]: Carta Manager de-registrata SUCCESS");
+        Log.Info("[RPF - CustomKeycard]: Keycard Manager un-registered SUCCESS");
         base.UnsubscribeEvents();
     }
 }

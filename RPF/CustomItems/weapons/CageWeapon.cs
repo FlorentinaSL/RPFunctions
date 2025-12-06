@@ -15,7 +15,7 @@ public class CageWeapon : Exiled.CustomItems.API.Features.CustomWeapon
     
     public override uint Id { get; set; } = 142;
     public override string Name { get; set; } = "Cage-Spawner";
-    public override string Description { get; set; } = "Crea una gabbia per SCP-173";
+    public override string Description { get; set; } = "Create a cage around SCP-173 when hurting it.";
     public override float Weight { get; set; } = 1.5f;
     public override Vector3 Scale { get; set; } = new Vector3(1f, 1f, 1f);
     public override SpawnProperties SpawnProperties { get; set; }

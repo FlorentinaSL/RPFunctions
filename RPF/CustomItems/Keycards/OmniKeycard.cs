@@ -12,7 +12,7 @@ public class OmniKeycard : CustomKeycard
 {
     public override uint Id { get; set; } = 142;
     public override string Name { get; set; } = "05-X Keycard";
-    public override string Description { get; set; } = "OmniCarta Presa dal'05-X.";
+    public override string Description { get; set; } = "OmniCarta";
     public override float Weight { get; set; } = 1.5f;
     public override SpawnProperties SpawnProperties { get; set; }
     public override string KeycardLabel { get; set; } = "OmniCarta-05X";
@@ -49,13 +49,13 @@ public class OmniKeycard : CustomKeycard
     }
     protected override void SubscribeEvents()
     {
-        Log.Info("[RPF - CustomKeycard]: Carta 05-X registrata SUCCESS");
+        Log.Info("[RPF - CustomKeycard]: Keycard 05-X registered SUCCESS");
         base.SubscribeEvents();
     }
 
     protected override void UnsubscribeEvents()
     {
-        Log.Info("[RPF - CustomKeycard]: Carta 05-X de-registrata SUCCESS");
+        Log.Info("[RPF - CustomKeycard]: Keycard 05-X un-registered SUCCESS");
         base.UnsubscribeEvents();
     }
 }

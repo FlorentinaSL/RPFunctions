@@ -8,7 +8,7 @@ public class PlayerJoin
     private void OnVerified(VerifiedEventArgs ev)
     {
         ev.Player.Broadcast(10, Main.Instance.Config.MessaggeJoin);
-        Log.Info("[RPF - PlayerJoin] Nuovo giocatore Entrato!");
+        Log.Info("[RPF - PlayerJoin] New Player Joined");
         
         if (Main.Instance.Config.IsEnabledMessage != true) return;
     }

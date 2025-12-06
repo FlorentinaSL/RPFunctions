@@ -13,9 +13,9 @@ namespace RPF.CustomRoles.Humans
     {
         public override uint Id { get; set; } = 110;
         public override int MaxHealth { get; set; } = 120;
-        public override string Name { get; set; } = "Tenente NTF";
-        public override string Description { get; set; } = "Tenente NTF con la pistola Cage Spawner.";
-        public override string CustomInfo { get; set; } = "Tenente NTF";
+        public override string Name { get; set; } = "Ultimate NTF";
+        public override string Description { get; set; } = "Ultimate NTF with the Cage Spawner.";
+        public override string CustomInfo { get; set; } = "Ultimate NTF NTF";
         public override RoleTypeId Role { get; set; } = RoleTypeId.NtfCaptain;
         public override float SpawnChance { get; set; } = 100;
         
@@ -61,7 +61,7 @@ namespace RPF.CustomRoles.Humans
         {
             //Patched: in 1.2.0
             base.AddRole(player);
-            player.Broadcast(10, "Sei un Tenente NTF.");
+            player.Broadcast(10, "you are an Ultimate NTF.");
         }
         
     }

@@ -7,16 +7,18 @@ namespace RPF
 {
     public class Config : IConfig
     {
-        [Description("----------------------- Pl Main -----------------------")]
+        [Description("----------------------- Plugin Main -----------------------")]
         public bool IsEnabled { get; set; } = true;
         public bool Debug { get; set; } = false;
 
         [Description("----------------------- SCP RP EVENTS ----------------------")]
-        public string ScpRpFunctions096 { get; set; } = "Non puoi utilizzare gli ascensori quando 106 è in rage!";
+        public string ScpRpFunctions096 { get; set; } = "You cannot use elevators when 106 is in rage!";
         public bool enable_106_functions { get; set; } = true;
-        public string ScpRpFunctions106 { get; set; } = "Non puoi utilizzare le porte!";
+
+        public string ScpRpFunctions106 { get; set; } = "You cannot use doors!";
         public bool enable_096_functions { get; set; } = true;
-        public string ScpRpFunctions939 { get; set; } = "Non puoi utilizzare gli ascensori!";
+
+        public string ScpRpFunctions939 { get; set; } = "You cannot use elevators!";
         public bool enable_939_functions { get; set; } = true;
         
         [Description("----------------------- FemurBreaker -----------------------")]
@@ -26,7 +28,7 @@ namespace RPF
         public bool OnlyHumansCanTrigger { get; set; } = true;
         public int FemurBreakerDelay { get; set; } = 8000;
 
-        public static string FemurBreakerCassie { get; set; } = "<b><color=red>Femur Breaker attivato . . .</color></b>";
+        public static string FemurBreakerCassie { get; set; } = "<b><color=red>Femur Breaker activated . . .</color></b>";
         
         [Description("------------------------ Overload Command ---------------------")]
         public string OverloadCommand { get; set; } = "Overload";
@@ -34,51 +36,51 @@ namespace RPF
         public string Overload079Cassie { get; set; } = "Overload... Completed...";
         
         [Description("------------------------ Scientist Command ------------------------")]
-        public string ScientistInstructions { get; set; } = "Vai all'uscita! Ecco una keycard per farti uscire!";
+        public string ScientistInstructions { get; set; } = "Go to the exit! Here is a keycard to help you escape!";
 
-        [Description("------------------------- BradCastBreach Main ---------------------")]
+        [Description("------------------------- Breach Broadcast Main ---------------------")]
         public bool Start_Annoucment { get; set; } = true;
         
         [Description("------------------------- Tesla Conditions -------------------------")]
         public bool TeslaConditions { get; set; } = true;
+
         [Description("------------------------- Custom Roles & Items ----------------------")]
         public bool CustomRoles { get; set; } = true;
         public bool CustomItems { get; set; } = true;
 
         [Description("------------------------- Player Join -------------------------")]
         public bool IsEnabledMessage { get; set; } = true;
-        public string MessaggeJoin { get; set; } = "<b><color=purple>Benvenuto su purgatorium RP!</color></b>";
+        public string MessaggeJoin { get; set; } = "<b><color=purple>Welcome to MyServer!</color></b>";
 
-        [Description("------------------------- Annunci Random -------------------------")]
+        [Description("------------------------- Random Announcements -------------------------")]
         public bool IsEnabledAnnunci { get; set; } = false;
-        public string AnnuncioContenuto { get; set; } = "<color=red>Non sei nel discord?! Perchè non ti unisci subito!</color>";
+        public string AnnuncioContenuto { get; set; } = "<color=red>Not in the Discord yet?! Why not join now!</color>";
 
-        [Description("------------------------- Custom Keycards (NON TOCCARE) -------------------------")]
-        public string OnAcquiringOmni { get; set; } = "Hai ottenuto la Keycard Omni!";
-        public string OnPickingOmni { get; set; } = "Hai raccolto la Keycard Omni.";
+        [Description("------------------------- Custom Keycards -------------------------")]
+        public string OnAcquiringOmni { get; set; } = "You have obtained the Omni Keycard!";
+        public string OnPickingOmni { get; set; } = "You picked up the Omni Keycard.";
 
-        public string OnAcquiringChief { get; set; } = "Hai ottenuto la Keycard Chief!";
-        public string OnPickingChief { get; set; } = "Hai raccolto la Keycard Chief.";
+        public string OnAcquiringChief { get; set; } = "You have obtained the Chief Keycard!";
+        public string OnPickingChief { get; set; } = "You picked up the Chief Keycard.";
 
-        public string OnAcquiringCid { get; set; } = "Hai ottenuto la Keycard CID!";
-        public string OnPickingCid { get; set; } = "Hai raccolto la Keycard CID.";
+        public string OnAcquiringCid { get; set; } = "You have obtained the CID Keycard!";
+        public string OnPickingCid { get; set; } = "You picked up the CID Keycard.";
 
-        public string OnAcquiringExpert { get; set; } = "Hai ottenuto la Keycard Expert!";
-        public string OnPickingExpert { get; set; } = "Hai raccolto la Keycard Expert.";
+        public string OnAcquiringExpert { get; set; } = "You have obtained the Expert Keycard!";
+        public string OnPickingExpert { get; set; } = "You picked up the Expert Keycard.";
 
-        public string OnAcquiringPro { get; set; } = "Hai ottenuto la Keycard Pro!";
-        public string OnPickingPro { get; set; } = "Hai raccolto la Keycard Pro.";
+        public string OnAcquiringPro { get; set; } = "You have obtained the Pro Keycard!";
+        public string OnPickingPro { get; set; } = "You picked up the Pro Keycard.";
 
-        public string OnAcquiringManager { get; set; } = "Hai ottenuto la Keycard Manager!";
-        public string OnPickingManager { get; set; } = "Hai raccolto la Keycard Manager.";
+        public string OnAcquiringManager { get; set; } = "You have obtained the Manager Keycard!";
+        public string OnPickingManager { get; set; } = "You picked up the Manager Keycard.";
 
-        public string OnAcquiringTech { get; set; } = "Hai ottenuto la Keycard Tech!";
-        public string OnPickingTech { get; set; } = "Hai raccolto la Keycard Tech.";
+        public string OnAcquiringTech { get; set; } = "You have obtained the Tech Keycard!";
+        public string OnPickingTech { get; set; } = "You picked up the Tech Keycard.";
 
-        [Description("------------------------- Custom GUI {player} e {specs} come alias. -------------------------")]
-        //Gradient :0
-        public string MessaggeHintTimer { get; set; } = "<b><color=#4bbfe2ff>Giocatori</color>:</b> {players} <b>| <color=#050eefff>Spettatori</color>:</b> {specs}";
-        public string MessaggeHintTitle { get; set; } = "<color=#7402ED>P</color><color=#6E02ED>u</color><color=#6802ED>r</color><color=#6202ED>g</color><color=#5C02ED>a</color><color=#5602ED>t</color><color=#5002ED>o</color><color=#4A02ED>r</color><color=#4402ED>i</color><color=#3E02ED>u</color><color=#3802ED>m</color> <color=#2C02ED>R</color><color=#2602ED>P</color>";
-        
+        [Description("------------------------- Custom GUI {player} and {specs} as aliases -------------------------")]
+        public string MessaggeHintTimer { get; set; } = "<b><color=#4bbfe2ff>Players</color>:</b> {players} <b>| <color=#050eefff>Spectators</color>:</b> {specs}";
+        public string MessaggeHintTitle { get; set; } = "MyServer (Modify in Config!)";
+
     }
 }

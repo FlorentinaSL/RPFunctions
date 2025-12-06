@@ -55,7 +55,7 @@ namespace RPF.Events.CustomRoles.Humans
         {
             //Patched: in 1.2.0
             base.AddRole(player);
-            player.Broadcast(10, "Sei un CI CLASS-D. shhh...");
+            player.Broadcast(10, "you are an CI CLASS-D. shhh...");
         }
         
     }

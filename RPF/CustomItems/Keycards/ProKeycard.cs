@@ -12,7 +12,7 @@ public class ProKeycard : CustomKeycard
 {
     public override uint Id { get; set; } = 146;
     public override string Name { get; set; } = "Pro-Keycard";
-    public override string Description { get; set; } = "Scienziato Pro Keycard per il ruolo Scienziato Pro";
+    public override string Description { get; set; } = "Keycard for the pro scientist";
     public override float Weight { get; set; } = 1.5f;
     public override SpawnProperties SpawnProperties { get; set; }
     public override string KeycardLabel { get; set; } = "ScienziatoPro-Keycard";
@@ -44,13 +44,13 @@ public class ProKeycard : CustomKeycard
     }
     protected override void SubscribeEvents()
     {
-        Log.Info("[RPF - CustomKeycard]: Carta Pro registrata SUCCESS");
+        Log.Info("[RPF - CustomKeycard]: Keycard Pro registered SUCCESS");
         base.SubscribeEvents();
     }
 
     protected override void UnsubscribeEvents()
     {
-        Log.Info("[RPF - CustomKeycard]: Carta Pro de-registrata SUCCESS");
+        Log.Info("[RPF - CustomKeycard]: Keycard Pro un-registered SUCCESS");
         base.UnsubscribeEvents();
     }
 }

@@ -19,7 +19,7 @@ namespace RPF.Commands.Client
             
             if (Main.Instance?.FemurBreaker == null)
             {
-                response = "FemurBreaker non initialized.";
+                response = "FemurBreaker not initialized.";
                 return false;
             }
             

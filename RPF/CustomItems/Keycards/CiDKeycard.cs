@@ -12,7 +12,7 @@ public class CidKeycard : CustomKeycard
 {
     public override uint Id { get; set; } = 144;
     public override string Name { get; set; } = "CID-Keycard";
-    public override string Description { get; set; } = "CI CLASS-D Keycard per il ruolo CI CLASS-D KEYCARD";
+    public override string Description { get; set; } = "CI CLASS-D Keycard for the role cid";
     public override float Weight { get; set; } = 1.5f;
     public override SpawnProperties SpawnProperties { get; set; }
     public override string KeycardLabel { get; set; } = "CID-Keycard";
@@ -47,13 +47,13 @@ public class CidKeycard : CustomKeycard
     }
     protected override void SubscribeEvents()
     {
-        Log.Info("[RPF - CustomKeycard]: Carta Cid registrata SUCCESS");
+        Log.Info("[RPF - CustomKeycard]: Keycard Cid registered SUCCESS");
         base.SubscribeEvents();
     }
 
     protected override void UnsubscribeEvents()
     {
-        Log.Info("[RPF - CustomKeycard]: Carta Cid de-registrata SUCCESS");
+        Log.Info("[RPF - CustomKeycard]: Keycard Cid un-registered SUCCESS");
         base.UnsubscribeEvents();
     }
 }

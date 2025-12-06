@@ -12,7 +12,7 @@ public class ChiefKeycard : CustomKeycard
 {
     public override uint Id { get; set; } = 143;
     public override string Name { get; set; } = "Chief-Keycard";
-    public override string Description { get; set; } = "Chief Keycard per il ruolo Chief Guard";
+    public override string Description { get; set; } = "Chief Keycard for the role chief-guard";
     public override float Weight { get; set; } = 1.5f;
     public override SpawnProperties SpawnProperties { get; set; }
     public override string KeycardLabel { get; set; } = "Chief-Keycard";
@@ -48,13 +48,13 @@ public class ChiefKeycard : CustomKeycard
     }
     protected override void SubscribeEvents()
     {
-        Log.Info("[RPF - CustomKeycard]: Carta Chief registrata SUCCESS");
+        Log.Info("[RPF - CustomKeycard]: Keycard registered SUCCESS");
         base.SubscribeEvents();
     }
 
     protected override void UnsubscribeEvents()
     {
-        Log.Info("[RPF - CustomKeycard]: Carta Chief de-registrata SUCCESS");
+        Log.Info("[RPF - CustomKeycard]: Keycard un-registered SUCCESS");
         base.UnsubscribeEvents();
     }
 }

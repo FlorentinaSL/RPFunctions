@@ -43,7 +43,6 @@
         <Compile Include="Commands\RA\Info.cs" />
         <Compile Include="Commands\RA\OmegaWarhead.cs" />
         <Compile Include="Commands\RA\Position.cs" />
-        <Compile Include="Commands\RA\Purgatorium.cs" />
         <Compile Include="Config.cs" />
         <Compile Include="CustomItems\CustomItemsHandler.cs" />
         <Compile Include="CustomItems\Items\EMP_Device.cs" />

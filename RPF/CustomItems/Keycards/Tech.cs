@@ -12,7 +12,7 @@ public class TechKeycard : CustomKeycard
 {
     public override uint Id { get; set; } = 148;
     public override string Name { get; set; } = "Tech Pro-Keycard";
-    public override string Description { get; set; } = "Tech Pro Keycard per il ruolo Tech Pro";
+    public override string Description { get; set; } = "Tech-pro keycard";
     public override float Weight { get; set; } = 1.5f;
     public override SpawnProperties SpawnProperties { get; set; }
     public override string KeycardLabel { get; set; } = "TechPro-Keycard";
@@ -44,13 +44,13 @@ public class TechKeycard : CustomKeycard
     }
     protected override void SubscribeEvents()
     {
-        Log.Info("[RPF - CustomKeycard]: Carta TechPro registrata SUCCESS");
+        Log.Info("[RPF - CustomKeycard]: Keycard TechPro registered SUCCESS");
         base.SubscribeEvents();
     }
 
     protected override void UnsubscribeEvents()
     {
-        Log.Info("[RPF - CustomKeycard]: Carta TechPro de-registrata SUCCESS");
+        Log.Info("[RPF - CustomKeycard]: Keycard TechPro un-registered SUCCESS");
         base.UnsubscribeEvents();
     }
 }

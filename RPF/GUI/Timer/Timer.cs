@@ -18,7 +18,7 @@ public class Timer
         
         if (ev.NewRole == RoleTypeId.Spectator)
         {
-            Log.Info("[RPF - CustomGUI]: Giocatore diventato spettatore, abilito il Timer.");
+            Log.Info("[RPF - CustomGUI]: New Spectator joined, showing timer.");
             
             DynamicElement dynamicTimer = new DynamicElement(150, () =>
             {

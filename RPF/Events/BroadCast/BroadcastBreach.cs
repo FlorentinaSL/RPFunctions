@@ -19,14 +19,14 @@ namespace RPF.Events.BroadCast
             }
             catch (Exception ex)
             {
-                Log.Error($"[FlickerLights] Errore: {ex}");
+                Log.Error($"[FlickerLights] Error: {ex}");
             }
         }
 
         public void OnRoundStarted()
         {
             if (Main.Instance.Config.Start_Annoucment != true) return;
-            Log.Info("[RPF - BroadCast]: Round Iniziato abilitando BroadCast...");
+            Log.Info("[RPF - BroadCast]: Round Started, starting broadcast...");
             FlickerAllLights();
         }
 

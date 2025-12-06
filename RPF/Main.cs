@@ -39,7 +39,7 @@ namespace RPF
         public static Main Instance { get; private set; }
         public FemurBreakerEvent FemurBreaker { get; private set; }
         public override string Name { get; } = "RPFunctions";
-        public override string Author { get; } = "Mr.Cat - #Per purgatorium <3";
+        public override string Author { get; } = "Mr.Cat";
         public override string Prefix { get; } = "rpf";
         public override Version Version { get; } = new Version(2, 1, 1);
         //New Verision Exiled (From 9.8.1 -> 9.10.2).
@@ -94,8 +94,8 @@ namespace RPF
             _035spawnRecall = new SpawnRecall();
             _035spawnRecall.Register();
             
-            Log.Info("[RPF - Ruoli Custom] Status Ruoli: [VALID]");
-            Log.Info("[RPF - Armi Custom] Status Armi: [VALID]");
+            Log.Info("[RPF - Roles Custom] Status Roles: [VALID]");
+            Log.Info("[RPF - Weapons Custom] Status weapons: [VALID]");
             Log.Info("========= [Purgatorium | RPF | Normal] =========\n" +
                      "RPF Status: [VALID]\n" +
                      $"Author: {Author}\n" +
@@ -121,13 +121,13 @@ namespace RPF
             _customGUIHandler.UnRegister();
             _035spawnRecall.UnRegister();
             
-            Debug.Log("[RPF - Internal] disabilitato");
+            Debug.Log("[RPF - Internal] disabled");
             base.OnDisabled();
         }
 
         public override void OnReloaded()
         {
-            Debug.Log("[RPF - Internal] ricaricato");
+            Debug.Log("[RPF - Internal] refreshed");
             base.OnReloaded();
         }
         

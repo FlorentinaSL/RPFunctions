@@ -13,7 +13,7 @@ public class Annunci
     {
         if (Main.Instance.Config.IsEnabledAnnunci != true) return;
         running = true;
-        Log.Info("[RPF - AnnunciC] Sistema Random Attivato (Inizio Round).");
+        Log.Info("[RPF - AnnunciC] System Random Activated.");
         annunci();
     }
     

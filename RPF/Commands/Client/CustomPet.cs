@@ -21,19 +21,19 @@ public class CustomPet : ICommand
         Player player = Player.Get(sender);
         if (arguments.Count < 1)
         {
-            response = "Metti un tipo di ruolo per il pet!";
+            response = "Choose a role for the pet like (scp173)";
             return false;
         }
 
         string roleName = arguments.At(0);
         if (!Enum.TryParse(roleName, true, out RoleTypeId role))
         {
-            response = $"Ruolo non valido: {roleName}";
+            response = $"Role not valid: {roleName}";
             return false;
         }
         
         Npc npc = Npc.Spawn(
-            name: $"Pet di {player.Nickname}",
+            name: $"Pet of {player.Nickname}",
             role: role,
             position: player.Position
             );
@@ -64,11 +64,11 @@ public class CustomPet : ICommand
         npc?.Destroy();
         pets.Remove(player);
 
-        Log.Info($"Il pet del player {player.Nickname} è stato rimosso.");
+        Log.Info($"Pet of {player.Nickname} has been removed");
     }
     
-    public string Command { get; } = "creapet";
+    public string Command { get; } = "createpet";
     public string[] Aliases { get; } = [];
-    public string Description { get; } = "Crea Il pet al giocatore assegnato.";
+    public string Description { get; } = "createpet";
     public string Permission { get; } = "rpf.vip";
 }

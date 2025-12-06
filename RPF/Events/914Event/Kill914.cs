@@ -6,7 +6,7 @@ public class Kill914
 {
     private void OnPlayerUpgrade(UpgradingPlayerEventArgs ev)
     {
-        ev.Player.Kill("Ucciso dagli ingranaggi di SCP-914.");
+        ev.Player.Kill("killed by SCP-914.");
     }
 
     public void Register()

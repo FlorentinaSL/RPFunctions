@@ -13,11 +13,11 @@ public class Custom049Pet : ICommand
     {
         Player player = Player.Get(sender);
         SpawnPet.SpawnCustomPet049(player);
-        response = "creando Il pet...";
+        response = "creating pet...";
         return true;
     }
 
     public string Command { get; } = "custom049";
     public string[] Aliases { get; } = [];
-    public string Description { get; } = "Crea il pettino per 049.";
+    public string Description { get; } = "create a custom pet for 049.";
 }

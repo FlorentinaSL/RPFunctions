@@ -166,7 +166,7 @@ namespace RPF.Events.Misc
 
             if (!_doorUnlockedByGenerators && CountActiveGenerators() < _config.GeneratorsRequired)
             {
-                ev.Player.ShowHint("<color=red>La cella è bloccata! Attiva tutti i generatori!</color>", 3);
+                ev.Player.ShowHint("<color=red>Cell blocked you need to start all generators!</color>", 3);
                 ev.IsAllowed = false;
                 return;
             }
@@ -180,7 +180,7 @@ namespace RPF.Events.Misc
 
         public async Task RunFemurBreaker()
         {
-            Log.Info("[FemurBreaker] Attivato: suono in processo.");
+            Log.Info("[FemurBreaker] Activated.");
             Map.PlayAmbientSound(28);
 
             await Task.Delay(_config.FemurBreakerDelay);
@@ -188,8 +188,8 @@ namespace RPF.Events.Misc
             var scp106 = Player.List.FirstOrDefault(p => p.IsAlive && p.Role.Type == RoleTypeId.Scp106);
             if (scp106 != null)
             {
-                scp106.Kill("Ucciso dal FemurBreaker");
-                Log.Info("[FemurBreaker] SCP-106 neutralizzato.");
+                scp106.Kill("Killed by FemurBreaker");
+                Log.Info("[FemurBreaker] SCP-106 neutralized.");
             }
 
             if (Main.Instance.Config.EnableFemurBreaker != true) return;

@@ -14,7 +14,7 @@ public class Position : ICommand
         Player player = Player.Get(sender);
         if (player == null)
         {
-            response = "Il player è null oppure non è il sender.";
+            response = "Il player is null.";
             return false;
         }
 
@@ -24,11 +24,11 @@ public class Position : ICommand
             player.Position.z
             );
         
-        response = $"Ecco le coordinate: {pos}";
+        response = $"Here are the coordinates: {pos}";
         return true;
     }
 
-    public string Command { get; } = "posizione";
+    public string Command { get; } = "coordinate";
     public string[] Aliases { get; } = [];
-    public string Description { get; } = "Da le coordinate di dove il giocatore si trova <3";
+    public string Description { get; } = "gives the coordinates of the player who send the command <3";
 }
