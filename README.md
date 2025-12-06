@@ -48,7 +48,7 @@ This Plugin Specifically add these things to your Server:
 
 ## Support
 
-For support, email: sigmapurgatorium12@outlook.it or server Exiled.
+For support, email: cisternino.luca@outlook.it or server Exiled.
 
 
 ## Authors:
