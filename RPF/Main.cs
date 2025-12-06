@@ -39,7 +39,7 @@ namespace RPF
         public static Main Instance { get; private set; }
         public FemurBreakerEvent FemurBreaker { get; private set; }
         public override string Name { get; } = "RPFunctions";
-        public override string Author { get; } = "Mr.Cat";
+        public override string Author { get; } = "Florentina <3";
         public override string Prefix { get; } = "rpf";
         public override Version Version { get; } = new Version(2, 1, 1);
         //New Verision Exiled (From 9.8.1 -> 9.10.2).
