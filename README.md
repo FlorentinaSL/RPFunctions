@@ -1,7 +1,7 @@
 # RPFunctions Plugin.
-![RPFBanner.jpg](./RPF/Images/RPFBanner.jpg)
-An new Exiled Plugin By Mr.Cat😉
 
+![RPFBanner](https://github.com/user-attachments/assets/584fb123-9676-456b-8a37-c05d17769c96)
+An new Exiled Plugin By Mr.Cat😉
 
 ## What this Plugin do?
 
@@ -22,7 +22,9 @@ This Plugin Specifically add these things to your Server:
 - Custom Weapons!
 - Tesla Gate Conditions!
 - 914 Event (Kill when player enter in 914 and when it activated The player get killed.)
-- SSS for max costumation.
+- New schematics!
+- New Custom Role & Keycards
+- New API (RPF-API repo)
 
 ## Screenshots:
 ### Omega Warhead:
@@ -39,6 +41,10 @@ This Plugin Specifically add these things to your Server:
 ### Custom Commands:
 ![App Screenshot](./RPF/Images/ExcapeTool.png)
 ![App Screenshot](./RPF/Images/Overload.png)
+
+### Added features for 2.0.0:
+![2074D2~1](https://github.com/user-attachments/assets/1e55fd94-37b2-4de0-8db6-096752c88e3a)
+![20FFCD~1](https://github.com/user-attachments/assets/3a1ce8a7-66fa-4fc4-9b9b-db7b97419fe8)
 
 ## Support
 
