@@ -16,7 +16,7 @@ namespace RPF.Commands.Client
 
             if (_usedThisRound)
             {
-                response = "You cant't do the command anymore. Please try again. Or another Scientist Alredy executed it!";
+                response = "You cant't do the command anymore. Please try again. Or another Scientist Already executed it!";
                 return false;
             }
 

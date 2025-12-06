@@ -19,14 +19,14 @@ namespace RPF.Events.RPSCP
         private void OnInteractingDoor(InteractingDoorEventArgs ev)
         {
             if (Main.Instance.Config.enable_106_functions)
-            if (ev.Player.Role.Type == RoleTypeId.Scp106)
-            {
-                if (!ev.Door.Type.IsElevator())
+                if (ev.Player.Role.Type == RoleTypeId.Scp106)
                 {
-                    ev.IsAllowed = false;
-                    ev.Player.ShowHint(Main.Instance.Config.ScpRpFunctions106);
+                    if (!ev.Door.Type.IsElevator())
+                    {
+                        ev.IsAllowed = false;
+                        ev.Player.ShowHint(Main.Instance.Config.ScpRpFunctions106);
+                    }
                 }
-            }
         }
     }
 }

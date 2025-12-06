@@ -10,14 +10,14 @@ namespace RPF.Commands.RA
         {
             
             response = "==================================\n";
-            response += "        RPFunctions\n    ";
-            response += "Plugin Made by Soldier and Mr.Cat.\n";
+            response += "        RPFunctions (Purgatorium)\n    ";
+            response += "Plugin Made by Mr.Cat\n";
             response += "==================================";
             return true;
         }
 
-        public string Command => "infoRPF";
-        public string[] Aliases => [ "infoRPF" ];
+        public string Command => "RPF";
+        public string[] Aliases => [ "rpf" ];
         public string Description => "Shows RP functions info";
     }
     

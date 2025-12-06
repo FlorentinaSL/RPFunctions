@@ -2,11 +2,9 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 using CommandSystem;
+using Exiled.API.Features;
 using PlayerRoles;
-using PluginAPI.Core;
 using UnityEngine;
-using Log = PluginAPI.Core.Log;
-using Map = PluginAPI.Core.Map;
 
 namespace RPF.Commands.Client
 {
@@ -47,7 +45,7 @@ namespace RPF.Commands.Client
             if (Main.Instance.Config.EnableOverloadCommand != true) return;
                 try
                 {
-                    Map.FlickerAllLights(5f);
+                    Map.TurnOffAllLights(5f);
                     await Task.Delay(500);
                 }
                 catch (Exception ex)
@@ -61,7 +59,7 @@ namespace RPF.Commands.Client
             if (Main.Instance.Config.EnableOverloadCommand != true) return;
                 try
                 {
-                    Map.ChangeColorOfAllLights(Color.red);
+                    Map.ChangeLightsColor(Color.red);
                     await Task.Delay(500);
                     Cassie.Message(
                         Main.Instance.Config.Overload079Cassie,

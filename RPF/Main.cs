@@ -1,24 +1,25 @@
 ﻿using System;
 using Exiled.API.Enums;
 using Exiled.API.Features;
-using Exiled.CustomItems.API;
 using Exiled.CustomItems.API.Features;
-using Exiled.CustomRoles.API;
 using Exiled.CustomRoles.API.Features;
-using Exiled.Events.EventArgs.Player;
+using RPF.CustomRoles;
+using RPF.Events._035Spawn;
 using RPF.Events._914Event;
 using RPF.Events.BroadCast;
+using RPF.Events.CustomAnnunci;
 using RPF.Events.CustomItems;
-using RPF.Events.CustomRoles;
-using RPF.Events.CustomRoles.Humans;
-using RPF.Events.CustomWeapon;
 using RPF.Events.Misc;
 using RPF.Events.RPSCP;
 using RPF.Events.TeslaGate;
+using RPF.Events.OnPlayerJoin;
+using RPF.GUI;
 using UnityEngine;
 
 namespace RPF
 {
+    //Copyright RPFunctions & RPF-API
+    //All rights reserved
     public class Main : Plugin<Config>
     {
         private BroadCastBreach _broadcast;
@@ -29,19 +30,21 @@ namespace RPF
         private Kill914 _kill914;
         private CustomRoleHandler _customRoleHandler;
         private CustomItemsHandler _customItemsHandler;
-        private WeaponHandler _weaponHandler;
+        private PlayerJoin _playerJoin;
+        private Annunci _annunci;
+        // Added new GUI'S. And Fixed Bug for Timer (2.1.0)
+        private CustomGUIHandler _customGUIHandler;
+        //Added new 035 interactive Mask! (2.1.1)
+        private SpawnRecall _035spawnRecall;
         public static Main Instance { get; private set; }
         public FemurBreakerEvent FemurBreaker { get; private set; }
-
-        public float HintDuration { get; } = 10f;
-        
         public override string Name { get; } = "RPFunctions";
-        public override string Author { get; } = "Mr.Cat";
-        public override string Prefix { get; } = "RPF";
-        public override Version Version { get; } = new Version(1, 3, 0);
-        public override Version RequiredExiledVersion { get; } = new Version(9, 8, 1);
+        public override string Author { get; } = "Mr.Cat - #Per purgatorium <3";
+        public override string Prefix { get; } = "rpf";
+        public override Version Version { get; } = new Version(2, 1, 1);
+        //New Verision Exiled (From 9.8.1 -> 9.10.2).
+        public override Version RequiredExiledVersion { get; } = new Version(9, 10, 2);
         public override PluginPriority Priority { get; } = PluginPriority.Medium;
-        
 
         public override void OnEnabled()
         {
@@ -53,39 +56,53 @@ namespace RPF
             
             _broadcast = new BroadCastBreach();
             _broadcast.Register();
-            
+
             _noDoorsFor10 = new NoDoorsFor106();
             _noDoorsFor10.RegisterEvents();
-            
+
             _noElevatorFor939 = new NoElevatorFor939();
             _noElevatorFor939.RegisterEvents();
-            
+
             _scp096ElevatorRestriction = new Scp096ElevatorRestriction();
             _scp096ElevatorRestriction.RegisterEvents();
-            
+
             _teslaGate = new RPF.Events.TeslaGate.TeslaConditions();
             _teslaGate.Register();
-            
+
             FemurBreaker = new Events.Misc.FemurBreakerEvent(Config);
             FemurBreaker.Register();
-            
+
             _kill914 = new Kill914();
             _kill914.Register();
-            
+
             _customRoleHandler = new CustomRoleHandler();
             _customRoleHandler.Register();
-            
+
+            //Added Keycard For version 2.0.0
             _customItemsHandler = new CustomItemsHandler();
             _customItemsHandler.Register();
 
-            _weaponHandler = new WeaponHandler();
-            _weaponHandler.Register();
+            _playerJoin = new PlayerJoin();
+            _playerJoin.Register();
+
+            _annunci = new Annunci();
+            _annunci.Register();
+
+            _customGUIHandler = new CustomGUIHandler();
+            _customGUIHandler.Register();
+
+            _035spawnRecall = new SpawnRecall();
+            _035spawnRecall.Register();
             
-            Debug.Log("Registered RPF Items and Roles");
-            Debug.Log("RPF enabled");
+            Log.Info("[RPF - Ruoli Custom] Status Ruoli: [VALID]");
+            Log.Info("[RPF - Armi Custom] Status Armi: [VALID]");
+            Log.Info("========= [Purgatorium | RPF | Normal] =========\n" +
+                     "RPF Status: [VALID]\n" +
+                     $"Author: {Author}\n" +
+                     $"Version: {Version}\n" +
+                     "=================================================");
             base.OnEnabled();
         }
-
 
         public override void OnDisabled()
         {
@@ -99,16 +116,20 @@ namespace RPF
             _customRoleHandler.Unregister();
             FemurBreaker?.Unregister();
             FemurBreaker = null;
+            _playerJoin.UnRegister();
+            _annunci.UnRegister();
+            _customGUIHandler.UnRegister();
+            _035spawnRecall.UnRegister();
             
-            
-            Debug.Log("RPF disabled");
+            Debug.Log("[RPF - Internal] disabilitato");
             base.OnDisabled();
         }
 
         public override void OnReloaded()
         {
-            Debug.Log("RPF reloaded");
+            Debug.Log("[RPF - Internal] ricaricato");
             base.OnReloaded();
         }
+        
     }
 }

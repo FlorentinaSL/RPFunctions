@@ -1,8 +1,6 @@
 ﻿using System;
 using Exiled.API.Enums;
-using Exiled.API.Features;
 using Exiled.API.Features.Doors;
-using PluginAPI.Core;
 using Cassie = Exiled.API.Features.Cassie;
 using Log = Exiled.API.Features.Log;
 using Map = Exiled.API.Features.Map;
@@ -21,13 +19,14 @@ namespace RPF.Events.BroadCast
             }
             catch (Exception ex)
             {
-                Log.Error($"[FlickerLights] Error: {ex}");
+                Log.Error($"[FlickerLights] Errore: {ex}");
             }
         }
 
         public void OnRoundStarted()
         {
             if (Main.Instance.Config.Start_Annoucment != true) return;
+            Log.Info("[RPF - BroadCast]: Round Iniziato abilitando BroadCast...");
             FlickerAllLights();
         }
 
