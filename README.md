@@ -1,6 +1,4 @@
 # RPFunctions Plugin.
-
-![RPFBanner](https://github.com/user-attachments/assets/584fb123-9676-456b-8a37-c05d17769c96)
 An new Exiled Plugin By Florentina😉
 
 ## What this Plugin do?
