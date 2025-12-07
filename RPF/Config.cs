@@ -12,17 +12,17 @@ namespace RPF
         public bool Debug { get; set; } = false;
 
         [Description("----------------------- SCP RP EVENTS ----------------------")]
-        public bool enable_106_functions { get; set; } = true;
+        public bool Enable106Functions { get; set; } = true;
         public string ScpRpFunctions106 { get; set; } = "You cannot use doors!";
-        public bool enable_096_functions { get; set; } = true;
+        public bool Enable096Functions { get; set; } = true;
         public string ScpRpFunctions096 { get; set; } = "You cannot use elevators when 096 is in rage!";
 
         public string ScpRpFunctions939 { get; set; } = "You cannot use elevators!";
-        public bool enable_939_functions { get; set; } = true;
+        public bool Enable939Functions { get; set; } = true;
         
         [Description("----------------------- FemurBreaker -----------------------")]
         public bool EnableFemurBreaker { get; set; } = true;
-        public string femur_command { get; set; } = "femur";
+        public string FemurCommand { get; set; } = "femur";
         public int GeneratorsRequired { get; set; } = 3;
         public bool OnlyHumansCanTrigger { get; set; } = true;
         public int FemurBreakerDelay { get; set; } = 8000;
@@ -38,7 +38,7 @@ namespace RPF
         public string ScientistInstructions { get; set; } = "Go to the exit! Here is a keycard to help you escape!";
 
         [Description("------------------------- Breach Broadcast Main ---------------------")]
-        public bool Start_Annoucment { get; set; } = true;
+        public bool StartAnnoucement { get; set; } = true;
         
         [Description("------------------------- Tesla Conditions -------------------------")]
         public bool TeslaConditions { get; set; } = true;

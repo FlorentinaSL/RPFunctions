@@ -18,7 +18,7 @@ namespace RPF.Events.RPSCP
 
         private void OnInteractingDoor(InteractingDoorEventArgs ev)
         {
-            if (Main.Instance.Config.enable_106_functions)
+            if (Main.Instance.Config.Enable106Functions)
                 if (ev.Player.Role.Type == RoleTypeId.Scp106)
                 {
                     if (!ev.Door.Type.IsElevator())

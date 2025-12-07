@@ -41,7 +41,7 @@ namespace RPF
         public override string Name { get; } = "RPFunctions";
         public override string Author { get; } = "Florentina <3";
         public override string Prefix { get; } = "rpf";
-        public override Version Version { get; } = new Version(2, 1, 1);
+        public override Version Version { get; } = new Version(2, 2, 0);
         //New Verision Exiled (From 9.8.1 -> 9.10.2).
         public override Version RequiredExiledVersion { get; } = new Version(9, 10, 2);
         public override PluginPriority Priority { get; } = PluginPriority.Medium;

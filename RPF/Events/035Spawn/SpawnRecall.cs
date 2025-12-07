@@ -6,7 +6,9 @@ public class SpawnRecall
 {
     private void OnRoundStarted()
     {
+        EventMask.Init();
         EventMask.SpawnMask();
+        MaskCageSpawn.Init();
         MaskCageSpawn.SpawnCage035();
     }
 

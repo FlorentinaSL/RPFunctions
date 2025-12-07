@@ -25,7 +25,7 @@ namespace RPF.Events.BroadCast
 
         public void OnRoundStarted()
         {
-            if (Main.Instance.Config.Start_Annoucment != true) return;
+            if (!Main.Instance.Config.StartAnnoucement) return;
             Log.Info("[RPF - BroadCast]: Round Started, starting broadcast...");
             FlickerAllLights();
         }
