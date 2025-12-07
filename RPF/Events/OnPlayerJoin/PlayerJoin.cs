@@ -7,10 +7,9 @@ public class PlayerJoin
 {
     private void OnVerified(VerifiedEventArgs ev)
     {
+        if (Main.Instance.Config.IsEnabledMessage != true) return;
         ev.Player.Broadcast(10, Main.Instance.Config.MessaggeJoin);
         Log.Info("[RPF - PlayerJoin] New Player Joined");
-        
-        if (Main.Instance.Config.IsEnabledMessage != true) return;
     }
 
     public void Register()

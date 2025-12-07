@@ -180,6 +180,7 @@ namespace RPF.Events.Misc
 
         public async Task RunFemurBreaker()
         {
+            if (Main.Instance.Config.EnableFemurBreaker != true) return;
             Log.Info("[FemurBreaker] Activated.");
             Map.PlayAmbientSound(28);
 
@@ -191,8 +192,6 @@ namespace RPF.Events.Misc
                 scp106.Kill("Killed by FemurBreaker");
                 Log.Info("[FemurBreaker] SCP-106 neutralized.");
             }
-
-            if (Main.Instance.Config.EnableFemurBreaker != true) return;
         }
     }
 }
