@@ -15,7 +15,7 @@ namespace RPF.Events.BroadCast
             {
                 Map.TurnOffAllLights(10f);
                 Door.LockAll(20, DoorLockType.Lockdown079);
-                Cassie.Message("<i><b><align=center> bell_start pitch_0.4 .G4 .G4 .G5 pitch_0.9 .G4 <color=blue> Attention .G3 Attention .G4 <color=red> SCP ? ? ? <color=white> has not escaped out of the <color=red> containment  <color=white> pitch_0.4 .G4 pitch_0.9 repeat .G4 <color=red> SCP ? ? ? <color=white> has not <color=red> breached <color=white> the <color=red> containment bell_end", isNoisy: false, isSubtitles: true);
+                Cassie.Message(Main.Instance.Config.AnnoucementMessage, isNoisy: false, isSubtitles: true);
             }
             catch (Exception ex)
             {

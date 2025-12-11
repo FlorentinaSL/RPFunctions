@@ -1,0 +1,69 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.8": {},
+    ".NETFramework,Version=v4.8/win": {},
+    ".NETFramework,Version=v4.8/win-arm64": {},
+    ".NETFramework,Version=v4.8/win-x64": {},
+    ".NETFramework,Version=v4.8/win-x86": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.8": []
+  },
+  "packageFolders": {
+    "C:\\Users\\ciste\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\ciste\\RiderProjects\\RPF - Git\\RPF\\RPF.csproj",
+      "projectName": "RPF",
+      "projectPath": "C:\\Users\\ciste\\RiderProjects\\RPF - Git\\RPF\\RPF.csproj",
+      "packagesPath": "C:\\Users\\ciste\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ciste\\RiderProjects\\RPF - Git\\RPF\\obj\\",
+      "projectStyle": "PackageReference",
+      "crossTargeting": true,
+      "UsingMicrosoftNETSdk": false,
+      "configFilePaths": [
+        "C:\\Users\\ciste\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net48"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\ciste\\AppData\\Roaming\\Cosmos User Kit\\packages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net48": {
+          "projectReferences": {}
+        }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net48": {}
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-arm64": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

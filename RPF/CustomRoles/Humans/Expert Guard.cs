@@ -56,6 +56,11 @@ namespace RPF.Events.CustomRoles.Humans
 
         public override void AddRole(Player player)
         {
+            // Added check Patch: in 2.2.1
+            if (DecontaminationState.Remain1Minute != null)
+            {
+                SpawnProperties = null;
+            }
             //Patched: in 1.2.0
             base.AddRole(player);
             player.Broadcast(10, "you are an Expert Guard.");

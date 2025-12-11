@@ -340,3 +340,4 @@ C:\Users\ciste\RiderProjects\RPF - Git\RPF\obj\Debug\RPF.csproj.CoreCompileInput
 C:\Users\ciste\RiderProjects\RPF - Git\RPF\obj\Debug\RPF.csproj.Up2Date
 C:\Users\ciste\RiderProjects\RPF - Git\RPF\obj\Debug\RPF.dll
 C:\Users\ciste\RiderProjects\RPF - Git\RPF\obj\Debug\RPF.pdb
+C:\Users\ciste\RiderProjects\RPF - Git\RPF\bin\Debug\AudioPlayerApi.dll

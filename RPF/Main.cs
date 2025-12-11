@@ -1,15 +1,12 @@
 ﻿using System;
 using Exiled.API.Enums;
 using Exiled.API.Features;
-using Exiled.CustomItems.API.Features;
-using Exiled.CustomRoles.API.Features;
 using RPF.CustomRoles;
 using RPF.Events._035Spawn;
 using RPF.Events._914Event;
 using RPF.Events.BroadCast;
 using RPF.Events.CustomAnnunci;
 using RPF.Events.CustomItems;
-using RPF.Events.Misc;
 using RPF.Events.RPSCP;
 using RPF.Events.TeslaGate;
 using RPF.Events.OnPlayerJoin;
@@ -37,11 +34,10 @@ namespace RPF
         //Added new 035 interactive Mask! (2.1.1)
         private SpawnRecall _035spawnRecall;
         public static Main Instance { get; private set; }
-        public FemurBreakerEvent FemurBreaker { get; private set; }
         public override string Name { get; } = "RPFunctions";
         public override string Author { get; } = "Florentina <3";
         public override string Prefix { get; } = "rpf";
-        public override Version Version { get; } = new Version(2, 2, 0);
+        public override Version Version { get; } = new Version(2, 3, 1);
         //New Verision Exiled (From 9.8.1 -> 9.10.2).
         public override Version RequiredExiledVersion { get; } = new Version(9, 10, 2);
         public override PluginPriority Priority { get; } = PluginPriority.Medium;
@@ -49,10 +45,6 @@ namespace RPF
         public override void OnEnabled()
         {
             Instance = this;
-            
-            CustomItem.RegisterItems();
-            CustomWeapon.RegisterItems();
-            CustomRole.RegisterRoles(true, this);
             
             _broadcast = new BroadCastBreach();
             _broadcast.Register();
@@ -68,9 +60,6 @@ namespace RPF
 
             _teslaGate = new RPF.Events.TeslaGate.TeslaConditions();
             _teslaGate.Register();
-
-            FemurBreaker = new Events.Misc.FemurBreakerEvent(Config);
-            FemurBreaker.Register();
 
             _kill914 = new Kill914();
             _kill914.Register();
@@ -94,12 +83,10 @@ namespace RPF
             _035spawnRecall = new SpawnRecall();
             _035spawnRecall.Register();
             
-            Log.Info("[RPF - Roles Custom] Status Roles: [VALID]");
-            Log.Info("[RPF - Weapons Custom] Status weapons: [VALID]");
-            Log.Info("========= [Purgatorium | RPF | Normal] =========\n" +
-                     "RPF Status: [VALID]\n" +
-                     $"Author: {Author}\n" +
-                     $"Version: {Version}\n" +
+            Log.Info("========= [RPF | Activation | Normal] =========\n" +
+                        "RPF Status: [VALID]\n" +
+                        $"Author: {Author}\n" +
+                        $"Version: {Version}\n" +
                      "=================================================");
             base.OnEnabled();
         }
@@ -114,8 +101,6 @@ namespace RPF
             _scp096ElevatorRestriction.UnregisterEvents();
             _teslaGate.Unregister();
             _customRoleHandler.Unregister();
-            FemurBreaker?.Unregister();
-            FemurBreaker = null;
             _playerJoin.UnRegister();
             _annunci.UnRegister();
             _customGUIHandler.UnRegister();

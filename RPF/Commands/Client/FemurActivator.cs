@@ -1,85 +1,53 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
-using System.Threading.Tasks;
+using System.Linq;
 using CommandSystem;
 using Exiled.API.Enums;
 using Exiled.API.Features;
-using Exiled.API.Features.Doors;
 using PlayerRoles;
+using RPF_API.API.FemurBreaker;
 using UnityEngine;
 
 namespace RPF.Commands.Client
 {
+    //new femur breaker
     [CommandHandler(typeof(ClientCommandHandler))]
     public class FemurActivator : ICommand
     {
         public bool Execute(ArraySegment<string> arguments, ICommandSender sender, [UnscopedRef] out string response)
         {
-            var player = Player.Get(sender);
-            
-            if (Main.Instance?.FemurBreaker == null)
+            Room room = Room.Get(RoomType.Hcz106);
+            var pos = room.Position;
+                
+            if (!Main.Instance.Config.EnableFemurBreaker)
             {
-                response = "FemurBreaker not initialized.";
+                response = "Femur Breaker is disabled in config.";
                 return false;
             }
-            
-            string roomName = player.CurrentRoom.Name.ToLower();
-            if (!roomName.Contains("106"))
+            if (Player.List.All(p => p.Role != RoleTypeId.Scp106))
             {
-                response = "You can Only do that in 106 room!";
+                response = "There is no SCP-106 in the round.";
                 return false;
             }
-            
-            response = "Running Femour Breaker...";
-            _ = Main.Instance.FemurBreaker.RunFemurBreaker();
-            Task.Run(Extetic);
-            
+            Npc npc = Npc.Spawn(
+                name: "Femur-Tester",
+                role: RoleTypeId.ClassD,
+                position: room.Position
+                );
+            Action handler = null;
+            handler = () =>
+            {
+                npc.Destroy();
+                Femur.OnFemurAnimationFinished -= handler;
+            };
+            Femur.OnFemurAnimationFinished += handler;
+            Femur.FemurSpawn();
+            response = "Femur Breaker Activated!";
             return true;
         }
-        
-        RoleTypeId[] _humanRoles =
-        {
-            RoleTypeId.ClassD,
-            RoleTypeId.Scientist,
-            RoleTypeId.FacilityGuard,
-            RoleTypeId.NtfPrivate,
-            RoleTypeId.NtfSergeant,
-            RoleTypeId.NtfSpecialist,
-            RoleTypeId.NtfCaptain,
-            RoleTypeId.ChaosConscript,
-            RoleTypeId.ChaosRifleman,
-            RoleTypeId.ChaosRepressor,
-            RoleTypeId.ChaosMarauder
-        };
-        
-        private static async Task Extetic()
-        {
-            try
-            {
-                Map.ChangeLightsColor(Color.red);
-                Cassie.Message(
-                    "ACTIVING FEMUR BREAKER",
-                    isNoisy: false,
-                    isSubtitles: true
-                );
-                await Task.Delay(3000);
-                Cassie.Message(
-                    "SCP 106 SUCCEFULLY TERMINATED",
-                    isNoisy: false,
-                    isSubtitles: true
-                );
-                Map.ChangeLightsColor(Color.green);
-                await Task.Delay(1000);
-                Map.ChangeLightsColor(Color.white);
-            }
-            catch (Exception ex)
-            {
-                Log.Error($"Error occured: {ex}");
-            }
-        }
-        
+
         public string Command { get; } = Main.Instance.Config.FemurCommand;
         public string[] Aliases { get; } = [ "femur" ];
-        public string Description { get; } = "Activate Femur Event.";
-    }    
+        public string Description { get; } = "Activates the femur breaker.";
+    }
 }

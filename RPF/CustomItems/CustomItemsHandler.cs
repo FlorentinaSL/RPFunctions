@@ -1,6 +1,5 @@
 ﻿using Exiled.CustomItems.API;
 using Exiled.CustomItems.API.Features;
-using Exiled.CustomRoles.API.Features;
 using RPF.CustomItems.Keycards;
 using RPF.CustomItems.weapons;
 using RPF.Events.CustomWeapon;
@@ -14,6 +13,8 @@ namespace RPF.Events.CustomItems
         {
             //Added New Keycard for Custom Roles and resolved Bug not registering Items for version 2.0.0.
             if (!Main.Instance.Config.CustomItems) return;
+            CustomItem.RegisterItems();
+            Exiled.CustomItems.API.Features.CustomWeapon.RegisterItems();
             new OmniKeycard().Register();
             new ManagerKeycard().Register();
             new ChiefKeycard().Register();

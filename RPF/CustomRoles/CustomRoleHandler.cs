@@ -11,6 +11,7 @@ namespace RPF.CustomRoles
         public void Register()
         {
             if (Main.Instance.Config.CustomRoles != true) return;
+            CustomRole.RegisterRoles(true, Main.Instance);
             new SiteManager().Register();
             new O5X().Register();
             new Chief_Guard().Register();
@@ -18,7 +19,7 @@ namespace RPF.CustomRoles
             new Expert_Guard().Register();
             new Scientist_Pro().Register();
             new Tech_Pro().Register();
-            new TenenteNTF().Register();
+            new UltimateNTF().Register();
         }
 
         public void Unregister()
@@ -31,7 +32,7 @@ namespace RPF.CustomRoles
             Expert_Guard.UnregisterRoles();
             Scientist_Pro.UnregisterRoles();
             Tech_Pro.UnregisterRoles();
-            TenenteNTF.UnregisterRoles();
+            UltimateNTF.UnregisterRoles();
         }
     }
 }

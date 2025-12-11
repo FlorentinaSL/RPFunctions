@@ -40,8 +40,6 @@ public class MediGun : Exiled.CustomItems.API.Features.CustomWeapon
             return;
 
         if (ev.ClaimedTarget == null) return;
-        
-        
         ev.ClaimedTarget.Heal(15);
     }
 }

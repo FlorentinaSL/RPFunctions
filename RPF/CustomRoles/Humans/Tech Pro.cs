@@ -25,7 +25,6 @@ namespace RPF.Events.CustomRoles.Humans
             "Flashlight",
             "Radio"
         };
-
         public override SpawnProperties SpawnProperties { get; set; } = new SpawnProperties()
         {
             Limit = 1,
@@ -42,6 +41,11 @@ namespace RPF.Events.CustomRoles.Humans
 
         protected override void SubscribeEvents()
         {
+            // Added check Patch: in 2.2.1
+            if (DecontaminationState.Remain1Minute != null)
+            {
+                SpawnProperties = null;
+            }
             Debug.Log($"Role {Name} subscribed");
             base.SubscribeEvents();
         }

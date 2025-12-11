@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace RPF.CustomRoles.Humans
 {
-    public class TenenteNTF : CustomRole
+    public class UltimateNTF : CustomRole
     {
         public override uint Id { get; set; } = 110;
         public override int MaxHealth { get; set; } = 120;
@@ -47,6 +47,11 @@ namespace RPF.CustomRoles.Humans
 
         protected override void SubscribeEvents()
         {
+            // Added check Patch: in 2.2.1
+            if (DecontaminationState.Remain1Minute != null)
+            {
+                SpawnProperties = null;
+            }
             Debug.Log($"Role {Name} subscribed");
             base.SubscribeEvents();
         }

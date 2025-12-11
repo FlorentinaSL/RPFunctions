@@ -23,11 +23,6 @@ namespace RPF
         [Description("----------------------- FemurBreaker -----------------------")]
         public bool EnableFemurBreaker { get; set; } = true;
         public string FemurCommand { get; set; } = "femur";
-        public int GeneratorsRequired { get; set; } = 3;
-        public bool OnlyHumansCanTrigger { get; set; } = true;
-        public int FemurBreakerDelay { get; set; } = 8000;
-
-        public static string FemurBreakerCassie { get; set; } = "<b><color=red>Femur Breaker activated . . .</color></b>";
         
         [Description("------------------------ Overload Command ---------------------")]
         public string OverloadCommand { get; set; } = "Overload";
@@ -39,6 +34,7 @@ namespace RPF
 
         [Description("------------------------- Breach Broadcast Main ---------------------")]
         public bool StartAnnoucement { get; set; } = true;
+        public string AnnoucementMessage { get; set; } = "Text here! Modify in Config...";
         
         [Description("------------------------- Tesla Conditions -------------------------")]
         public bool TeslaConditions { get; set; } = true;
