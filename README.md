@@ -24,34 +24,14 @@ This Plugin Specifically add these things to your Server:
 - New Custom Role & Keycards
 - New API (RPF-API repo)
 
-## Screenshots:
-### Omega Warhead:
-![App Screenshot](./RPF/Images/OmegaWarhead.png)
-
-### Custom Roles:
-![App Screenshot](./RPF/Images/SiteManager.png)
-![App Screenshot](./RPF/Images/CIClass-D.png)
-
-### Custom Items:
-![App Screenshot](./RPF/Images/Emp_Device.png)
-![App Screenshot](./RPF/Images/SuperAdrenaline.png)
-
-### Custom Commands:
-![App Screenshot](./RPF/Images/ExcapeTool.png)
-![App Screenshot](./RPF/Images/Overload.png)
-
-### Added features for 2.0.0:
-![2074D2~1](https://github.com/user-attachments/assets/1e55fd94-37b2-4de0-8db6-096752c88e3a)
-![20FFCD~1](https://github.com/user-attachments/assets/3a1ce8a7-66fa-4fc4-9b9b-db7b97419fe8)
-
-## Support
-
+## Support 
 For support, email: cisternino.luca@outlook.it or server Exiled.
 
 
 ## Authors:
 
 - [@MRCAT9898](https://www.github.com/MRCAT9898)
+- [@Konoaru384](https://www.github.com/Konoaru384)
 
 ## License
 
