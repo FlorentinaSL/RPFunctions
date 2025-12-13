@@ -7,6 +7,7 @@ using RPF.Events._914Event;
 using RPF.Events.BroadCast;
 using RPF.Events.CustomAnnunci;
 using RPF.Events.CustomItems;
+using RPF.Events.Misc;
 using RPF.Events.RPSCP;
 using RPF.Events.TeslaGate;
 using RPF.Events.OnPlayerJoin;
@@ -34,6 +35,7 @@ namespace RPF
         //Added new 035 interactive Mask! (2.1.1)
         private SpawnRecall _035spawnRecall;
         public static Main Instance { get; private set; }
+        public OldFemurBreakerEvent femurInst { get; private set; }
         public override string Name { get; } = "RPFunctions";
         public override string Author { get; } = "Florentina <3";
         public override string Prefix { get; } = "rpf";
@@ -44,7 +46,11 @@ namespace RPF
 
         public override void OnEnabled()
         {
+            //re-added the old femur breaker.
             Instance = this;
+            femurInst = new OldFemurBreakerEvent(Config);
+            
+            femurInst.Register();
             
             _broadcast = new BroadCastBreach();
             _broadcast.Register();
@@ -93,6 +99,8 @@ namespace RPF
 
         public override void OnDisabled()
         {
+            femurInst?.Unregister();
+            femurInst = null;
             _customItemsHandler.Unregister();
             _broadcast.Unregister();
             _noDoorsFor10.UnregisterEvents();

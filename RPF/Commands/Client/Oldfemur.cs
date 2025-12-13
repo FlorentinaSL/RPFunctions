@@ -2,9 +2,7 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 using CommandSystem;
-using Exiled.API.Enums;
 using Exiled.API.Features;
-using Exiled.API.Features.Doors;
 using PlayerRoles;
 using UnityEngine;
 
@@ -17,7 +15,7 @@ namespace RPF.Commands.Client
         {
             var player = Player.Get(sender);
             
-            if (Main.Instance?.FemurBreaker == null)
+            if (Main.Instance?.femurInst == null)
             {
                 response = "FemurBreaker not initialized.";
                 return false;
@@ -31,7 +29,7 @@ namespace RPF.Commands.Client
             }
             
             response = "Running Femour Breaker...";
-            _ = Main.Instance.FemurBreaker.RunFemurBreaker();
+            _ = Main.Instance.femurInst.RunFemurBreaker();
             Task.Run(Extetic);
             
             return true;
@@ -78,8 +76,8 @@ namespace RPF.Commands.Client
             }
         }
         
-        public string Command { get; } = Main.Instance.Config.FemurCommand;
-        public string[] Aliases { get; } = [ "femur" ];
+        public string Command { get; } = "oldfemur";
+        public string[] Aliases { get; } = [ "oldfemur" ];
         public string Description { get; } = "Activate Femur Event.";
     }    
 }

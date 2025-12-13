@@ -10,9 +10,9 @@ using UnityEngine;
 
 namespace RPF.Commands.Client
 {
-    //new femur breaker
+    //Old femur breaker
     [CommandHandler(typeof(ClientCommandHandler))]
-    public class FemurActivator : ICommand
+    public class OldFemurActivator : ICommand
     {
         public bool Execute(ArraySegment<string> arguments, ICommandSender sender, [UnscopedRef] out string response)
         {

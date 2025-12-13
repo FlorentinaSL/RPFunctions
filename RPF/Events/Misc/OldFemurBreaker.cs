@@ -11,7 +11,7 @@ using PlayerRoles;
 
 namespace RPF.Events.Misc
 {
-    public class FemurBreakerEvent
+    public class OldFemurBreakerEvent
     {
         private readonly Config _config;
 
@@ -21,7 +21,7 @@ namespace RPF.Events.Misc
         private CancellationTokenSource _monitorCts;
         private bool _doorUnlockedByGenerators;
 
-        public FemurBreakerEvent(Config config)
+        public OldFemurBreakerEvent(Config config)
         {
             this._config = config ?? throw new ArgumentNullException(nameof(config));
         }

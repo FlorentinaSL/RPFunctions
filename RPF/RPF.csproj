@@ -70,7 +70,7 @@
     <Compile Include="Events\914Event\Kill914.cs" />
     <Compile Include="Events\BroadCast\BroadcastBreach.cs" />
     <Compile Include="Events\CustomAnnunci\Annunci.cs" />
-    <Content Include="Events\Misc\OldFemurBreaker.txt" />
+    <Compile Include="Events\Misc\OldFemurBreaker.cs" />
     <Compile Include="Events\OnPlayerJoin\PlayerJoin.cs" />
     <Compile Include="Events\RPSCP\RP096.cs" />
     <Compile Include="Events\RPSCP\RP106.cs" />
@@ -89,7 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\RPF.dll" />
-    <Content Include="Commands\Client\Oldfemur.txt" />
+    <Compile Include="Commands\Client\Oldfemur.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="0Harmony, Version=2.3.6.0, Culture=neutral, processorArchitecture=MSIL">
