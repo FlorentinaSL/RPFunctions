@@ -1,0 +1,11 @@
+[33m2962256[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: pull --rebase origin main (start): checkout 2962256d189b747caad51cc3a894629761374ccf
+[33md7a659c[m[33m ([m[1;32mmain[m[33m)[m HEAD@{1}: commit (merge): Resolve merge conflicts
+[33m76f6c24[m HEAD@{2}: commit: Re-Added the old femur breaker for who need it
+[33maa9f4a7[m HEAD@{3}: commit: Added new femur on beta version soon gonna be release =)!
+[33m8996cbc[m HEAD@{4}: commit: Fixed bug
+[33mb1c57a0[m HEAD@{5}: commit: Added new Version + Resolved config bugs
+[33ma8af8d3[m HEAD@{6}: commit: Fixed bugs in events.
+[33m44423aa[m HEAD@{7}: commit (merge): Fix merge conflicts
+[33m55cb9cb[m HEAD@{8}: commit: Fix Bugs.
+[33m3c4168d[m[33m ([m[1;33mtag: [m[1;33m2.0.0[m[33m)[m HEAD@{9}: commit: Added/updated translations
+[33m7a557a5[m HEAD@{10}: pull origin main --allow-unrelated-histories: Fast-forward
