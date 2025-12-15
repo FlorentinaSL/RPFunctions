@@ -32,7 +32,6 @@
 
 <hr style="border: 0; border-top: 1px solid #444; margin: 40px 0;" />
 
-<!-- CREATED BY -->
 <div align="center">
   <h2>Created by</h2>
 
@@ -54,18 +53,17 @@
 
 <br><br>
 
-<section>
+<div>
   <h2>Overview</h2>
   <p>
     RPFunctions is a complete RolePlay enhancement framework for SCP: Secret Laboratory.  
     It introduces custom events, RP‑friendly mechanics, new roles, items, and deep configuration options to shape your server’s identity.
   </p>
-</section>
+</div>
 
 <hr style="border: 0; border-top: 1px solid #444; margin: 40px 0;" />
 
-
-<section>
+<div>
   <h2>Core Features</h2>
 
   <table style="width: 100%; border-collapse: collapse;">
@@ -102,11 +100,11 @@
       </td>
     </tr>
   </table>
-</section>
+</div>
 
 <br><br>
 
-<section>
+<div>
   <h2>Installation</h2>
 
   <blockquote style="border-left: 4px solid #555; padding-left: 12px; color: #aaa;">
@@ -115,28 +113,28 @@
     3. Restart your server.<br>
     4. Configure RPFunctions using the generated config files.
   </blockquote>
-</section>
+</div>
 
 <br><br>
 
-<section>
+<div>
   <h2>Support</h2>
   <p>
     For support, contact:<br>
     <a href="mailto:cisternino.luca@outlook.it">cisternino.luca@outlook.it</a><br>
     or reach out via the Exiled community.
   </p>
-</section>
+</div>
 
 <br><br>
 
-<section>
+<div>
   <h2>License</h2>
   <p>
     This project is licensed under the MIT License.<br>
     <a href="https://choosealicense.com/licenses/mit/">https://choosealicense.com/licenses/mit/</a>
   </p>
-</section>
+</div>
 
 <br><br>
 
