@@ -1,46 +1,106 @@
-# RPFunctions Plugin.
-An new Exiled Plugin By Florentina😉
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=RPFunctions&fontSize=60&fontColor=fff&animation=twinkling" />
+</p>
 
-## What this Plugin do?
+<div align="center">
 
-**This Plugin Add RP Event to make sure that the server
-is 100% RolePlay! The Config very argumented for your
-customification!**
+# **RPFunctions Plugin**
+### A powerful Exiled plugin designed for immersive RolePlay servers.
 
-This Plugin Specifically add these things to your Server:
+---
 
-- Custom Breach On round started
-- Custom Events for Better Content
-- Femur Breaker
-- Commands for Client and RA for RolePlay
-- Omega Warhead in Game! (RA command to start)
-- For Better RP we are introducing CustomRoles & CustomItems!
-- SCP now are RP! (Like 106 can't open doors.)
-- Premium Version for access other Content!
-- Custom Weapons!
-- Tesla Gate Conditions!
-- 914 Event (Kill when player enter in 914 and when it activated The player get killed.)
-- New schematics!
-- New Custom Role & Keycards
-- New API (RPF-API repo)
+### ⭐ Created by ; 
+## **Konoaru the :3 boykisser**  
+## **MRCAT9898/Florentina/Pekka  the men with a lot of name...**
+https://github.com/Konoaru384  
 
-## Support 
-For support, email: cisternino.luca@outlook.it or server Exiled.
+</div>
 
+---
 
-## Authors:
+## 🚀 Overview
 
-- [@MRCAT9898](https://www.github.com/MRCAT9898)
-- [@Konoaru384](https://www.github.com/Konoaru384)
+**RPFunctions** brings a complete RolePlay experience to SCP: Secret Laboratory servers.  
+It introduces custom events, RP‑friendly mechanics, new roles, items, and deep configuration options to shape your server exactly the way you want.
 
-## License
+Whether you're building a lore‑heavy RP server or a cinematic SCP experience, RPFunctions gives you the tools to make it happen.
 
-[MIT](https://choosealicense.com/licenses/mit/)
+---
 
-## Badges
+## 🎮 Features
 
-Badges: [shields.io](https://shields.io/)
+### ✅ **Gameplay Enhancements**
+- Custom Breach event on round start  
+- Unique RP‑focused events  
+- Femur Breaker integration  
+- Omega Warhead (RA command to activate)  
+- Tesla Gate custom conditions  
+- 914 Event (kills players entering when activated)  
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
-[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
+### ✅ **RolePlay Systems**
+- Custom Roles  
+- Custom Items  
+- SCP behavior adapted for RP  
+  - Example: SCP‑106 can no longer open doors  
+
+### ✅ **Content Additions**
+- New schematics  
+- New keycards  
+- New custom weapons  
+- RPF‑API (dedicated API repository)  
+
+### ✅ **Premium Version**
+Unlocks additional exclusive content and advanced RP systems.
+
+---
+
+## 📊 Stats & Downloads
+
+<p align="center">
+
+<img src="https://img.shields.io/github/downloads/FlorentinaSL/RPFunctions/total?color=blue&label=Downloads" />
+<img src="https://img.shields.io/github/v/release/FlorentinaSL/RPFunctions?label=Latest%20Release" />
+<img src="https://img.shields.io/github/repo-size/FlorentinaSL/RPFunctions?label=Repository%20Size" />
+<img src="https://img.shields.io/github/stars/FlorentinaSL/RPFunctions?style=flat&label=Stars" />
+
+</p>
+
+---
+
+## 🛠 Support
+
+For support, contact:  
+📧 **cisternino.luca@outlook.it**  
+or reach out through the **Exiled server**.
+
+---
+
+## 👥 Authors
+
+- [@MRCAT9898](https://github.com/MRCAT9898)  
+- [@Konoaru384](https://github.com/Konoaru384)  
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.  
+https://choosealicense.com/licenses/mit/
+
+---
+
+## 🏷 Badges
+
+Provided by [shields.io](https://shields.io/)
+
+<p align="center">
+<img src="https://img.shields.io/badge/License-MIT-green.svg" />
+<img src="https://img.shields.io/badge/License-GPL%20v3-yellow.svg" />
+<img src="https://img.shields.io/badge/License-AGPL-blue.svg" />
+</p>
+
+---
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=footer"/>
+</p>
