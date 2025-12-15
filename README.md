@@ -3,6 +3,27 @@
 </p>
 
 <div align="center">
+  <table style="border-collapse: collapse; margin-top: 10px;">
+    <tr>
+      <td style="padding: 8px;">
+        <img src="https://img.shields.io/github/downloads/FlorentinaSL/RPFunctions/total?color=0af&label=Downloads" />
+      </td>
+      <td style="padding: 8px;">
+        <img src="https://img.shields.io/github/v/release/FlorentinaSL/RPFunctions?label=Latest%20Release" />
+      </td>
+      <td style="padding: 8px;">
+        <img src="https://img.shields.io/github/stars/FlorentinaSL/RPFunctions?label=Stars&color=yellow" />
+      </td>
+      <td style="padding: 8px;">
+        <img src="https://img.shields.io/github/repo-size/FlorentinaSL/RPFunctions?label=Repository%20Size" />
+      </td>
+    </tr>
+  </table>
+</div>
+
+<br>
+
+<div align="center">
   <h1 style="margin-bottom: 0;">RPFunctions Plugin</h1>
   <p style="font-size: 18px; color: #888; margin-top: 5px;">
     Advanced RolePlay Framework for SCP: Secret Laboratory
@@ -11,6 +32,7 @@
 
 <hr style="border: 0; border-top: 1px solid #444; margin: 40px 0;" />
 
+<!-- CREATED BY -->
 <div align="center">
   <h2>Created by</h2>
 
@@ -32,27 +54,6 @@
 
 <br><br>
 
-<div align="center">
-  <table style="border-collapse: collapse;">
-    <tr>
-      <td style="padding: 8px;">
-        <img src="https://img.shields.io/github/downloads/FlorentinaSL/RPFunctions/total?color=0af&label=Downloads" />
-      </td>
-      <td style="padding: 8px;">
-        <img src="https://img.shields.io/github/v/release/FlorentinaSL/RPFunctions?label=Latest%20Release" />
-      </td>
-      <td style="padding: 8px;">
-        <img src="https://img.shields.io/github/stars/FlorentinaSL/RPFunctions?label=Stars" />
-      </td>
-      <td style="padding: 8px;">
-        <img src="https://img.shields.io/github/repo-size/FlorentinaSL/RPFunctions?label=Repository%20Size" />
-      </td>
-    </tr>
-  </table>
-</div>
-
-<br><br>
-
 <section>
   <h2>Overview</h2>
   <p>
@@ -62,6 +63,7 @@
 </section>
 
 <hr style="border: 0; border-top: 1px solid #444; margin: 40px 0;" />
+
 
 <section>
   <h2>Core Features</h2>
