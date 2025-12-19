@@ -28,7 +28,7 @@
   </tr>
   <tr>
     <td align="center" style="padding: 10px;">
-      <strong>MRCAT9898 / Florentina / Pekka the man with many names</strong><br>
+      <strong>Florentina</strong><br>
       <a href="https://github.com/FlorentinaSL">github.com/FlorentinaSL</a>
     </td>
   </tr>
